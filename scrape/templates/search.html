@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Search</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/search.css') }}">
+    </head>
+    <body>
+        <div class="container">
+            <span id="search-span">
+                <input type="text" placeholder="Search for Clothes..." id="q"></input>
+                <button type="submit" id="bt"><img src="static/css/images/search.png"></button>
+            </span>
+        </div>
+        <span><h1>Top Amazon Results</h1></span>
+        <div class="wrapper" amazon-container>
+        </div>
+        <span><h1>Top Etsy Results</h1></span>
+        <div class="wrapper" etsy-container>
+        </div>
+        <template data-user-template>
+            <div class="item">
+                <h5 name></h5>
+                <a href="" link><button id="click"><h3>See More</h3></button></a>
+            </div>
+        </template>
+    </body>
+    <script src="{{url_for('static', filename='main.js')}}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</html>

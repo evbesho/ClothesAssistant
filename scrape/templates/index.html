@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+        <title>Clothes I guess...</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    </head>
+    <body>
+        <div class="container">
+            <span>
+                <input type="text" placeholder="Search for Clothes..." id="q"></input>
+                <button type="submit" id="bt"><img src="static/css/images/search.png"></button>
+            </span>
+        </div>
+    </body>
+    <script src="{{url_for('static', filename='main.js')}}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</html>
